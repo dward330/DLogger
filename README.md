@@ -6,8 +6,12 @@ Derrick Kyle Ward's Asynchronous Logging Framework.
   
 * **Why was this developed**:
   * This was my first stab at trying to develop a useful framework/library that can be used for any application. 
-* **What was Challenging**:
-  * Making sure all messages are guarenteed to be logged before a program, using this framework, exits.
+* **Challenges**:
+  * Keeping the order in which the log messages are written to the file the same as the queueing order.
+  * Making sure the thread working on the queue of messages does not remain the active thread in the application or on the system.
+  * Providing an intuitive way for the user to halt the logging system and shut it down.
+     * Using the method name C# developers would look for: Dispose()
+     * This will ensure the logging system will take no more messages and the last queue messaged is written to the file.
 
 
 
