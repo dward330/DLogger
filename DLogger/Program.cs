@@ -11,9 +11,13 @@ namespace DLogger
     {
         static void Main(string[] args)
         {
-            IDLogger logger = new DLogger();
+            IDLogger logger = new DLogger("Shantel");
 
-            logger.Error("This is the first Log Statement.");
+            logger.Info("Shantel Info");
+            logger.Warning("Shantel Warning");
+            logger.Error("Shantel Error");
+
+            logger.Dispose();
         }
     }
 }

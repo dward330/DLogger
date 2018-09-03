@@ -3,3 +3,10 @@ C:\Users\U505429\Desktop\GitHub\DLogger\DLogger\bin\Release\DLogger.dll
 C:\Users\U505429\Desktop\GitHub\DLogger\DLogger\bin\Release\DLogger.pdb
 C:\Users\U505429\Desktop\GitHub\DLogger\DLogger\obj\Release\DLogger.dll
 C:\Users\U505429\Desktop\GitHub\DLogger\DLogger\obj\Release\DLogger.pdb
+C:\Users\Derrick\Documents\GitHub\DLogger\DLogger\bin\Release\DLogger.pdb
+C:\Users\Derrick\Documents\GitHub\DLogger\DLogger\obj\Release\DLogger.csprojAssemblyReference.cache
+C:\Users\Derrick\Documents\GitHub\DLogger\DLogger\obj\Release\DLogger.csproj.CoreCompileInputs.cache
+C:\Users\Derrick\Documents\GitHub\DLogger\DLogger\obj\Release\DLogger.pdb
+C:\Users\Derrick\Documents\GitHub\DLogger\DLogger\bin\Release\DLogger.exe.config
+C:\Users\Derrick\Documents\GitHub\DLogger\DLogger\bin\Release\DLogger.exe
+C:\Users\Derrick\Documents\GitHub\DLogger\DLogger\obj\Release\DLogger.exe

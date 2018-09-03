@@ -13,3 +13,9 @@ C:\Users\U505429\Desktop\GitHub\DLogger\DLogger\obj\Debug\DLogger.pdb
 C:\Users\U505429\Desktop\GitHub\DLogger\DLogger\bin\Debug\DLogger.exe.config
 C:\Users\U505429\Desktop\GitHub\DLogger\DLogger\bin\Debug\DLogger.exe
 C:\Users\U505429\Desktop\GitHub\DLogger\DLogger\obj\Debug\DLogger.exe
+C:\Users\Derrick\Documents\GitHub\DLogger\DLogger\bin\Debug\DLogger.exe.config
+C:\Users\Derrick\Documents\GitHub\DLogger\DLogger\bin\Debug\DLogger.exe
+C:\Users\Derrick\Documents\GitHub\DLogger\DLogger\bin\Debug\DLogger.pdb
+C:\Users\Derrick\Documents\GitHub\DLogger\DLogger\obj\Debug\DLogger.csproj.CoreCompileInputs.cache
+C:\Users\Derrick\Documents\GitHub\DLogger\DLogger\obj\Debug\DLogger.exe
+C:\Users\Derrick\Documents\GitHub\DLogger\DLogger\obj\Debug\DLogger.pdb

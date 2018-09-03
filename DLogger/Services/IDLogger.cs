@@ -10,5 +10,7 @@ namespace DLogger.Services
         Boolean Error(String logMessage, Type classLogging = null);
         Boolean Warning(String logMessage, Type classLogging = null);
         Boolean Info(String logMessage, Type classLogging = null);
+
+        void Dispose();
     }
 }
