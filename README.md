@@ -11,7 +11,7 @@ Derrick Kyle Ward's Asynchronous Logging Framework.
   * Making sure the thread working on the queue of messages does not remain the active thread in the application or on the system.
   * Providing an intuitive way for the user to halt the logging system and shut it down.
      * Using the method name C# developers would look for: Dispose()
-     * This will ensure the logging system will take no more messages and the last queue messaged is written to the file.
+     * This will ensure the logging system will take no more messages and the last queue messaged is written to the file before returning to the caller.
 
 
 
