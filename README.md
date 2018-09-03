@@ -2,7 +2,7 @@
 Derrick Kyle Ward's Asynchronous Logging Framework.
 
 * **Purpose**:
-  * Allows user to asynchronously Log Messages of different severities, from different threads, to a single log file. 
+  * Allows user to asynchronously Log Messages of different severity, from different threads, to a single log file. 
   
 * **Why was this developed**:
   * This was my first stab at trying to develop a useful framework/library that can be used for any application. 
