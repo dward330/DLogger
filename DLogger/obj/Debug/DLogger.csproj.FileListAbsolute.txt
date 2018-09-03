@@ -1,0 +1,15 @@
+\\ncccnsf711z1.wellsfargo.net\r_wsdusa_users\u505429\my documents\visual studio 2015\Projects\DLogger\DLogger\bin\Debug\DLogger.dll.config
+\\ncccnsf711z1.wellsfargo.net\r_wsdusa_users\u505429\my documents\visual studio 2015\Projects\DLogger\DLogger\bin\Debug\DLogger.dll
+\\ncccnsf711z1.wellsfargo.net\r_wsdusa_users\u505429\my documents\visual studio 2015\Projects\DLogger\DLogger\bin\Debug\DLogger.pdb
+\\ncccnsf711z1.wellsfargo.net\r_wsdusa_users\u505429\my documents\visual studio 2015\Projects\DLogger\DLogger\obj\Debug\DLogger.dll
+\\ncccnsf711z1.wellsfargo.net\r_wsdusa_users\u505429\my documents\visual studio 2015\Projects\DLogger\DLogger\obj\Debug\DLogger.pdb
+C:\Work\_SVN_1awf-abttframework\DLogger\DLogger\bin\Debug\DLogger.dll.config
+C:\Work\_SVN_1awf-abttframework\DLogger\DLogger\bin\Debug\DLogger.dll
+C:\Work\_SVN_1awf-abttframework\DLogger\DLogger\bin\Debug\DLogger.pdb
+C:\Work\_SVN_1awf-abttframework\DLogger\DLogger\obj\Debug\DLogger.dll
+C:\Work\_SVN_1awf-abttframework\DLogger\DLogger\obj\Debug\DLogger.pdb
+C:\Users\U505429\Desktop\GitHub\DLogger\DLogger\bin\Debug\DLogger.pdb
+C:\Users\U505429\Desktop\GitHub\DLogger\DLogger\obj\Debug\DLogger.pdb
+C:\Users\U505429\Desktop\GitHub\DLogger\DLogger\bin\Debug\DLogger.exe.config
+C:\Users\U505429\Desktop\GitHub\DLogger\DLogger\bin\Debug\DLogger.exe
+C:\Users\U505429\Desktop\GitHub\DLogger\DLogger\obj\Debug\DLogger.exe

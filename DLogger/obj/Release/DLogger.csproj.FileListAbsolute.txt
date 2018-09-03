@@ -1,0 +1,5 @@
+C:\Users\U505429\Desktop\GitHub\DLogger\DLogger\bin\Release\DLogger.dll.config
+C:\Users\U505429\Desktop\GitHub\DLogger\DLogger\bin\Release\DLogger.dll
+C:\Users\U505429\Desktop\GitHub\DLogger\DLogger\bin\Release\DLogger.pdb
+C:\Users\U505429\Desktop\GitHub\DLogger\DLogger\obj\Release\DLogger.dll
+C:\Users\U505429\Desktop\GitHub\DLogger\DLogger\obj\Release\DLogger.pdb
