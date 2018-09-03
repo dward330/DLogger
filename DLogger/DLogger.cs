@@ -44,7 +44,6 @@ namespace DLogger
         {
             this.logFileName = logFileName;
             this.StartUpLogger();
-
         }
 
         public DLogger(LogLevel logLevel, String logFileName = "DLogger")
@@ -52,7 +51,6 @@ namespace DLogger
             this._LogLevel = logLevel;
             this.logFileName = logFileName;
             this.StartUpLogger();
-
         }
 
         #endregion
@@ -60,14 +58,19 @@ namespace DLogger
         #region Methods
 
         /// <summary>
-        /// Completes Start Up Operations for Logger
+        /// Completes Start Up Operations: Creates log file, Dequeuing Thread, and Logs Start up Message
         /// </summary>
         private void StartUpLogger()
         {
             lock (this._logDestinationLock)
             {
+                //Get Current Date and Time, in a specific format
                 String timeNow = DateTime.Now.ToString("yyyy-MM-dd_HH-mm-ss");
+
+                //1st Preference: Create Absolute Filepath with DateTime in filename
                 String tempLogFullPath = String.Format("{0}\\{1}_{2}.txt", Directory.GetCurrentDirectory(), this.logFileName, timeNow);
+
+                //2nd Preference: Create Abosolute Filepath with DateTime and fresh Guid in filename
                 String tempAlternativeLogFullPath = String.Format("{0}\\{1}_{2}_{3}.txt", Directory.GetCurrentDirectory(), this.logFileName, timeNow, new Guid());
 
                 if (!File.Exists(tempLogFullPath))
@@ -91,11 +94,12 @@ namespace DLogger
             this.QueueLogMessage("Logger has started and is running...", LogLevel.Info, typeof(DLogger));
         }
 
-        /// <summary>
         /// Adds a Message to the Log Queue, to be logged.
         /// </summary>
-        /// <param name="logMessage"> String Type: Log message to be added to the queue</param>
-        /// <returns>Boolean Type: Confirmation Message was added to the log queue</returns>
+        /// <param name="logMessage">message to be added to the queue</param>
+        /// <param name="logLevel">level/severity of the message</param>
+        /// <param name="classLogging">class that is logging this message</param>
+        /// <returns>whether or not confirmation message was added to the log queue</returns>
         public Boolean QueueLogMessage(String logMessage, LogLevel logLevel = LogLevel.Info, Type classLogging = null)
         {
             Boolean tempMessageQueued = false;
@@ -161,6 +165,7 @@ namespace DLogger
                                 {
                                     if (null != this._FileWriter && ((int)logMessage.LogLevel) <= (int)this._LogLevel)
                                     {
+                                        //Logs next message in queue to file.
                                         this._FileWriter.WriteLine(String.Format("{0}-{1} -> {2}: {3}",
                                             ((null != logMessage.ClassLogging) ? logMessage.ClassLogging.Name : @"N/A"),
                                             logMessage.MessageDateTimeStamp.ToString("yyyy-MM-dd_HH-mm-ss"), logMessage.LogLevel.ToString(),
@@ -174,6 +179,7 @@ namespace DLogger
                                 this._logQueue.Clear();
                             }
 
+                            // Stop logging messages to file and clearing queue, if signal to shutdown is set or file pointer is lost.
                             if (this.LoggerShuttingDown && null != this._FileWriter)
                             {
                                 this._FileWriter.Dispose();
@@ -185,6 +191,7 @@ namespace DLogger
                         }
                     }
 
+                    // Place this thread to sleep, so other application or system threads can become active. 
                     Thread.Sleep(this.WaitTime_ForDequeueAllLogMessages);
                 }
             }
@@ -197,7 +204,7 @@ namespace DLogger
         }
 
         /// <summary>
-        /// Releases all the logger's resources
+        /// Shutdown logger and release all the logger's resources
         /// </summary>
         public void Dispose()
         {
@@ -220,8 +227,8 @@ namespace DLogger
         /// <summary>
         /// Logs Error Message
         /// </summary>
-        /// <param name="logMessage"></param>
-        /// <param name="classLogging"></param>
+        /// <param name="logMessage">message to log</param>
+        /// <param name="classLogging">class that is logging this message</param>
         /// <returns></returns>
         bool IDLogger.Error(string logMessage, Type classLogging)
         {
@@ -231,8 +238,8 @@ namespace DLogger
         /// <summary>
         /// Logs Warning Message
         /// </summary>
-        /// <param name="logMessage"></param>
-        /// <param name="classLogging"></param>
+        /// <param name="logMessage">message to log</param>
+        /// <param name="classLogging">class that is logging this message</param>
         /// <returns></returns>
         bool IDLogger.Warning(string logMessage, Type classLogging)
         {
@@ -242,8 +249,8 @@ namespace DLogger
         /// <summary>
         /// Logs Info Message
         /// </summary>
-        /// <param name="logMessage"></param>
-        /// <param name="classLogging"></param>
+        /// <param name="logMessage">message to log</param>
+        /// <param name="classLogging">class that is logging this message</param>
         /// <returns></returns>
         bool IDLogger.Info(string logMessage, Type classLogging)
         {

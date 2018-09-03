@@ -1,0 +1,4 @@
+DLogger-2018-09-03_17-50-23 -> Info: Logger has started and is running...
+Program-2018-09-03_17-50-23 -> Info: Derrick Info
+N/A-2018-09-03_17-50-23 -> Warning: Derrick Warning
+N/A-2018-09-03_17-50-23 -> Error: Derrick Error

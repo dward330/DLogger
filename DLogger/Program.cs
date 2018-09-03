@@ -11,12 +11,18 @@ namespace DLogger
     {
         static void Main(string[] args)
         {
-            IDLogger logger = new DLogger("Shantel");
+            IDLogger logger = new DLogger("Derrick");
 
-            logger.Info("Shantel Info");
-            logger.Warning("Shantel Warning");
-            logger.Error("Shantel Error");
+            //Tell logger to log a info message, from the Program Class Type
+            logger.Info("Derrick Info", typeof(Program));
 
+            //Tell logger to log a warning message
+            logger.Warning("Derrick Warning");
+
+            //Tell logger to log an error message
+            logger.Error("Derrick Error");
+
+            //Tell Logger to stop listening for new messages and to shutdown
             logger.Dispose();
         }
     }
