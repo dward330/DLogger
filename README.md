@@ -1,2 +1,2 @@
 # DLogger
-Derrick's Logging Framework
+Derrick Kyle Ward's Logging Framework
