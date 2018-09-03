@@ -1,5 +1,5 @@
 # DLogger
-Derrick Kyle Ward's Logging Framework. This is an asynchronous logging framework. 
+Derrick Kyle Ward's AsynchronousLogging Framework.
   * Why was this developed:
     * This was my first stab at trying to develop a useful framework/library that can be used for any application. 
   * What was Challenging:
